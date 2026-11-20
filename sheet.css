@@ -1,0 +1,27 @@
+.bubbles {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;   
+  z-index: 0;
+}
+.bubble {
+  position: absolute;
+  bottom: -100px;          
+  border-radius: 50%;   
+  background: #000000;     
+  animation: rise linear infinite;
+}
+@keyframes rise {
+  from { transform: translateY(0); }
+  to   { transform: translateY(-120vh); }
+}
+.card {
+  position: relative;
+  z-index: 1;
+}
+body{
+  width:420px;
+  height:600px;
+  
+}
